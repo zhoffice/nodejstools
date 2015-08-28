@@ -242,11 +242,12 @@ $managed_files = (
     "Microsoft.NodejsTools.Telemetry.11.0.dll",
     "Microsoft.NodejsTools.Telemetry.12.0.dll",
     "Microsoft.NodejsTools.Telemetry.14.0.dll",
-    "Microsoft.NodejsTools.InstallerTelemetryAction.CA.dll",
     "Microsoft.NodejsTools.InstallerTelemetryAction.dll"
 )
 
-$native_files = @()
+$native_files = @(
+    "Microsoft.NodejsTools.InstallerTelemetryAction.CA.dll"
+)
 
 $supported_vs_versions = (
     @{number="14.0"; name="VS 2015"; build_by_default=$true},
