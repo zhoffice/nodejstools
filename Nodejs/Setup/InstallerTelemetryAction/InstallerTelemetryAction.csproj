@@ -63,6 +63,9 @@
     <Compile Include="InstallerTelemetryAction.cs" />
     <Content Include="CustomAction.config" />
   </ItemGroup>
+  <ItemGroup>
+    <OutputBinariesToSign Include="Microsoft.NodejsTools.InstallerTelemetryAction.CA.dll" />
+  </ItemGroup>
   <Import Project="$(BuildRoot)\Build\Common.Build.CSharp.targets" />
   <Import Project="$(WixCATargetsPath)" />
   <Import Project="..\SetupProjectAfter.settings" />
